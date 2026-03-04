@@ -1,9 +1,14 @@
 {
-"compilerOptions": {
-  "outDir": "./dist",
-  "rootDir": "./",
-  "module": "CommonJS",
-  "target": "ES2019",
-  "esModuleInterop": true
-  }
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./",
+    "module": "CommonJS",
+    "target": "ES2019",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": false
+  },
+  "include": ["cli.ts", "CLI_Engine/**/*", "commands/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

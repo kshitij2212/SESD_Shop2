@@ -3,7 +3,8 @@ const {execSync} = require("child_process");
 class InitTsCommand {
     register(program){
         program
-        .command('init-ts <foldername>')        
+        .command('init-ts <foldername>')
+        .description('Initialize a new TypeScript project in a new folder')        
         .action((foldername)=>{
             this.InitializeTs(foldername);
         })
